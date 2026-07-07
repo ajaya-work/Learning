@@ -12,7 +12,7 @@ export class App {
  name = "Angular Tutorial";
  isAdmin = true;
  count = 5;
- price = 1;
+ price = 100.5;
  isLogin = true;
  title = signal("Welcome to Angular");
  getUser (){
