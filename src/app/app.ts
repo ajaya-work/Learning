@@ -9,5 +9,24 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
- 
+//  value = 10;
+//  value = "Ajaya";
+
+// this is property declaration
+// Union type
+  name : string | number = "Ajaya";
+  age : number = 20;
+  isValid : boolean = true;
+
+ handleClick() {
+  // this is variable declaration
+  let value;
+  value = 20;
+  value = "Ajaya";
+  console.log(value);
+ }
+
+ sum (a:number, b:number) {
+  console.log(a + b);
+ }
 }
