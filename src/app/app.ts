@@ -9,5 +9,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
- 
+ count =0;
+ handleClick(){
+  let abc = "abcd";
+  console.log("Button Clicked");
+  this.helloWorld();
+ }
+ helloWorld(){
+  console.log("Hello World");
+ }
 }
