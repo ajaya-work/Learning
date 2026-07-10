@@ -1,1 +1,12 @@
-<H1> Hello World</H1>
+<!-- Get/Set value using function + event -->
+<input (input)="updateName($event.target.value)" placeholder="Enter name">
+<p>Your Name is {{name}}</p>
+
+<!-- Get/Set value using $event(event object) -->
+<input (input)="city= $event.target.value" placeholder="Enter City">
+<p> Your city : {{city}}</p>
+
+<!-- Get value using Template Reference Variable -->
+ <input #userInput placeholder="Enter Email"/>
+ <button (click)="getEmail(userInput.value)">Get Button</button>
+<p> Your Email : {{email}}</p>
