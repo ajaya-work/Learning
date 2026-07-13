@@ -9,5 +9,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
- 
+//  items = ['HTML','CSS','JavaScript','TypeScript', 'Angular']
+
+numbers = [1,2,3,4,5]
 }
