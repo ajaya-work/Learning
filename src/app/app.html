@@ -1,1 +1,25 @@
-<H1> Hello World</H1>
+<!-- @for (item of items; track $index) {
+    <p>{{$index+1}}. {{item}}</p>
+} -->
+
+<!-- Loops with object -->
+ <!-- @for (use of users; track $index) {
+    <div>
+        <h4>{{use.name}}</h4>
+        <p>Age: {{use.age}}</p>
+    </div>
+ } -->
+
+
+ @for (fruit of fruit; track $index ; let i = $index) {
+    <p>{{fruit}}</p>
+    <button (click)="removeItem(i)">Delete</button>
+ }
+
+ @for (num of numbers; track $index) {
+    @if (num % 2 == 0) {
+        <p>{{num}} is even</p>
+    } @else {
+        <p>{{num}} is odd</p>
+    }
+ }
