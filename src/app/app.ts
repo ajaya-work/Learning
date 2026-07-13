@@ -9,5 +9,18 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
- 
+ isLoggedIn = false;
+
+ marks = 65;
+
+ showBox = true;
+
+ toggleBox() {
+   this.showBox = !this.showBox;
+  }
+
+  age = 0;
+  updatedAge (value: string) {
+  this.age = Number(value);
+  }
 }
