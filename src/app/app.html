@@ -1,1 +1,45 @@
-<H1> Hello World</H1>
+@switch (value) {
+    @case ("home") {
+        <p>Home Page</p>
+    }
+    @case ("about") {
+        <p>About Page</p>
+    }
+    @case ("contact") {
+        <p>Contact Page</p>
+    }
+    @default {
+        <p>Page Not Found</p>
+    }
+}
+
+<button (click)="tab='home'">Home</button>
+<button (click)="tab='about'">About</button>
+<button (click)="tab='contact'">Contact</button>
+
+@switch (tab) {
+    @case("home"){
+        <p> Home Page</p>
+    }
+    @case("about"){
+        <p> About Page</p>
+    }
+    @case("contact"){
+        <p> Contact Page</p>
+    }
+}
+
+<input (input)="updateCat($event.target.value)" placeholder="Enter category">
+@switch (categories) {
+    @case("fruit"){
+        <p>Fruit Category</p>
+    }
+    @case("veg"){
+        <p> Vegetable Category</p>
+    }
+    @case("contact"){
+        <p>Non- Vegetable Category</p>
+    } @default {
+        <p>Not Found</p>
+    }
+}

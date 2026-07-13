@@ -9,5 +9,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
- 
+  value : string = "home";
+
+  tab = "home";
+
+  categories ="";
+  updateCat (value : string){
+    this.categories = value.toLowerCase();
+  }
 }
