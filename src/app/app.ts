@@ -9,5 +9,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
- 
+ count = signal(0);
+ val = 20;
+
+ increment (){
+  this.count.update(c => c+1);
+ }
+  decrement (){
+  this.count.update(c => c-1);
+ }
+  reset (){
+  this.count.set(0);
+ }
 }
